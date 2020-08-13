@@ -15,11 +15,11 @@
     font-weight: bold;
     font-variant: all-small-caps;
     float: left;
-    color: black;
+    color: whitesmoke;
 }
 .top-nav {
-    background-image: url("https://wallpaperaccess.com/full/2049212.jpg");
-    background-size: cover;
+   /* background-image: url("https://wallpaperaccess.com/full/2049212.jpg");
+    background-size: cover;*/
     background-color: black;
     width: 97.8%;
     position: fixed;
@@ -28,12 +28,11 @@
     font-size: 22px;
 }
 .home{
-    background: lightslategrey;
     height: 80px;
 }
 header{
-    /*background-image: url("https://wallpaperaccess.com/full/2049212.jpg");
-    background-size: cover;*/
+    background-image: url("https://wallpaperaccess.com/full/2049212.jpg");
+    background-size: cover;
     background-size: cover;
     min-height: 300px;
     padding-top: 275px;
