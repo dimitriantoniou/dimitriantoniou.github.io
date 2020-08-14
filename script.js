@@ -1,3 +1,4 @@
+//js for nav bar and menu
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
 
