@@ -163,6 +163,10 @@
         border-radius: 100%;
         border: 4px solid whitesmoke;
     }
+    /*highlight current page*/
+    nav a.current {
+        background-color: grey;
+    }
 
 }
 .footer{
