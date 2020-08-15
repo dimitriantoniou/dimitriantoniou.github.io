@@ -1,6 +1,6 @@
 //js for nav bar and menu
 
-const toggle = document.querySelector(".toggle");
+//const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
 
 /* Toggle mobile menu */
@@ -19,10 +19,11 @@ function toggleMenu() {
 }
 
 /* Event Listener */
-toggle.addEventListener("click", toggleMenu, false);
+//toggle.addEventListener("click", toggleMenu, false);
 
 /*DropDown functionality*/
-const items = document.querySelectorAll(".item");
+//const items = document.querySelectorAll(".item");
+const toggle = document.querySelector("#dropdownlist");
 
 /* Activate Submenu */
 function toggleItem() {
