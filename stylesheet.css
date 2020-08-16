@@ -147,10 +147,6 @@
         border-radius: 100%;
         border: 4px solid whitesmoke;
     }
-    .active{
-        background: lightgrey;
-    }
-
 }
 .footer{
     position: fixed;
