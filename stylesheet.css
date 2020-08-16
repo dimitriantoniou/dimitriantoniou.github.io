@@ -151,6 +151,21 @@
     nav a:hover {
         background: grey;
     }
+    ul li ul.submenu{
+        min-width: 100%; /* Set width of the dropdown */
+        background: black;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.submenu{
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.submenu li{
+        display: block;
+        background: black;
+    }
 
     .headshot-image {
         position: absolute;
@@ -163,11 +178,11 @@
         border-radius: 100%;
         border: 4px solid whitesmoke;
     }
-    /*highlight current page*/
+    /*highlight current page - work in progress
     nav a.current {
         background-color: grey;
     }
-
+    */
 }
 .footer{
     position: fixed;
