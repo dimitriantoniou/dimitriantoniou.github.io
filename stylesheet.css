@@ -156,11 +156,23 @@
 }
 
 .footer {
+    display: flex;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background: grey;
     color: white;
+    justify-content: center;
+}
+.socialicons{
+    list-style: none;
+}
+.fa {
+    position: relative;
+    margin-right: 1em;
     text-align: center;
+    display: block;
+    width: auto;
+
 }
