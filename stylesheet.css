@@ -150,29 +150,32 @@
     .short-bio{
         margin-top: 50px;
         text-align: center;
-
+    }
+    .fun-facts{
+        font-size: 30px;
     }
 
 }
 
 .footer {
-    display: flex;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background: grey;
     color: white;
+    display: flex;
     justify-content: center;
 }
 .socialicons{
     list-style: none;
+    display: flex;
 }
 .fa {
     position: relative;
-    margin-right: 1em;
+    margin: 1em;
     text-align: center;
     display: block;
     width: auto;
-
+    color: white;
 }
