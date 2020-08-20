@@ -173,9 +173,16 @@
 }
 .fa {
     position: relative;
-    margin: 1em;
+    margin: 1.5em;
     text-align: center;
     display: block;
     width: auto;
     color: white;
+}
+.grow {
+    transition: all .1s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(2.0);
 }
