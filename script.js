@@ -1,10 +1,16 @@
+"use strict";
 
-/* trying to create a common nav bar file to reference
-$(document).ready(function(){
-    $("#navbar-frame").load("nav.html");
-});
- */
+//same nav bar on every page
+fetch("./nav.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("nav").innerHTML = data;
+    });
 
+
+//same footer on every page
 fetch("./footer.html")
     .then(response => {
         return response.text()
@@ -13,10 +19,11 @@ fetch("./footer.html")
         document.querySelector("footer").innerHTML = data;
     });
 
-fetch("./nav.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("nav").innerHTML = data;
+//highlight current page in navbar
+$(function(){
+    $('a').each(function(){
+        if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('active'); $(this).parents('li').addClass('active');
+        }
     });
+});

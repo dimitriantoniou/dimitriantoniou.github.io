@@ -1,4 +1,4 @@
-/*home page styeld*/
+/*home page styled*/
 /* Small devices (phones and pocket devices, 576 and up) */
 @media screen and (min-width:576px) {
     /* ... */
@@ -74,7 +74,10 @@
     nav {
         background: black;
     }
-
+    nav.active {
+        color:            black;
+        background-color: white;
+    }
     .menu {
         padding: 1.5em;
         margin: 1.5em;
@@ -116,9 +119,12 @@
         display: inline-block; /* inline-block to increase clickable area beyond the text */
         padding: 1em; /* increases clickable area of anchor tags on all sides by 1em */
     }
-
     nav a:hover {
         background: grey;
+    }
+    /*to highlight current page in navbar*/
+    #nav_bar .active {
+        background-color: red;
     }
     ul li ul.submenu{
         min-width: 100%; /* Set width of the dropdown */
@@ -147,13 +153,11 @@
         border-radius: 100%;
         border: 4px solid whitesmoke;
     }
-    .short-bio{
-        margin-top: 50px;
-        text-align: center;
-    }
+
     .fun-facts{
         font-size: 30px;
     }
+
 
 }
 
