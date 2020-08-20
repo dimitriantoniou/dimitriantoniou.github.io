@@ -19,8 +19,11 @@ fetch("./footer.html")
         document.querySelector("footer").innerHTML = data;
     });
 
-//highlight current page in navbar
 
+
+
+//highlight current page in navbar
+/*
 function setNavigation() {
     var path = window.location.pathname; //get current url and assign it to the variable path
     path = path.replace(/\/$/, "");//replace content of var path between the / / with an empty string
@@ -42,4 +45,15 @@ so there is something wrong in my $(this).attr('href') method
 
 the variable definition of var href should assign the href value within the link element with class menu
 
+ */
+/*
+function setCurrentPage(){
+    var path = window.location.pathname; //get the current url
+    $(".menu a").each(function(){
+        var href= $(this).attr('href');
+        if (path === href) {
+            $(this).children('li').addClass('active');
+        }
+    })
+}
  */
