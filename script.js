@@ -34,3 +34,12 @@ function setNavigation() {
         }
     });
 }
+/*
+the first block of code results in, for the index page example, path = /dimitriantoniou.github.io/index.html.
+but console.log(path.substring(0, href.length)) throws an error cause i havent defined href.
+above, ive defined var href = $(this).attr('href');
+so there is something wrong in my $(this).attr('href') method
+
+the variable definition of var href should assign the href value within the link element with class menu
+
+ */
