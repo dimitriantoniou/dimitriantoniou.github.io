@@ -74,10 +74,7 @@
     nav {
         background: black;
     }
-    nav.active {
-        color:            black;
-        background-color: white;
-    }
+
     .menu {
         padding: 1.5em;
         margin: 1.5em;
@@ -122,10 +119,15 @@
     nav a:hover {
         background: grey;
     }
-    /*to highlight current page in navbar*/
-    #nav_bar .active {
-        background-color: red;
+/*trying to highlight current page*/
+    .menu li.active {
+        background-color:green;
     }
+    .menu li.active a {
+        color:yellow;
+        font-weight:bold;
+    }
+
     ul li ul.submenu{
         min-width: 100%; /* Set width of the dropdown */
         background: black;

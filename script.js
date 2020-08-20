@@ -20,10 +20,16 @@ fetch("./footer.html")
     });
 
 //highlight current page in navbar
-$(function(){
-    $('a').each(function(){
-        if ($(this).prop('href') == window.location.href) {
-            $(this).addClass('active'); $(this).parents('li').addClass('active');
+
+function setNavigation() {
+    var path = window.location.pathname;
+    path = path.replace(/\/$/, "");
+    path = decodeURIComponent(path);
+
+    $(".menu a").each(function () {
+        var href = $(this).attr('href');
+        if (path.substring(0, href.length) === href) {
+            $(this).closest('li').addClass('active');
         }
     });
-});
+}
