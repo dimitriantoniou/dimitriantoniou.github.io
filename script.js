@@ -22,14 +22,15 @@ fetch("./footer.html")
 //highlight current page in navbar
 
 function setNavigation() {
-    var path = window.location.pathname;
-    path = path.replace(/\/$/, "");
-    path = decodeURIComponent(path);
+    var path = window.location.pathname; //get current url and assign it to the variable path
+    path = path.replace(/\/$/, "");//replace content of var path between the / / with an empty string
+    path = decodeURIComponent(path); // set var path equal to a decoded string of the path
 
-    $(".menu a").each(function () {
-        var href = $(this).attr('href');
-        if (path.substring(0, href.length) === href) {
-            $(this).closest('li').addClass('active');
+    $(".menu a").each(function () { //run the following on each a in the menu ul
+        var href = $(this).attr('href'); //set the var href = to the href from the menu a object
+        if (path.substring(0, href.length) === href) { //condition: if the substring from the above variable path
+            //  is equal to the length of the variable href, then:
+            $(this).closest('li').addClass('active'); //add the class "active" to the closest li element
         }
     });
 }
