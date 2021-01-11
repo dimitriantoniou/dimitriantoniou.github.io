@@ -25,7 +25,7 @@
         }
         .bgimg-1 {
             background-image: url("./photos/acadia_path.jpg");
-            min-height: 100%;
+            min-height: 600px;
         }
 
         .bgimg-2 {
@@ -64,7 +64,17 @@
         #portfolio{
             display:flex;
             justify-content: space-around;
-
+        }
+        .portfolio-item{
+            margin: 10px;
+        }
+        button{
+            background: #777777;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
         }
 
         /* Turn off parallax scrolling for tablets and phones */
@@ -124,16 +134,31 @@
     <div style="position:relative;">
         <div style="color:#777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" class="flex-container">
             <div id="portfolio">
-                <h2>Writing</h2>
-                <h2>Code</h2>
-                <h2>Music</h2>
+                <div class="portfolio-item">
+                    <h2>Writing</h2>
+                    <p>I didn't consider myself a writer until I graduated college and realized how much I relied on and enjoyed that skill.
+                        Now, I write as a hobby, as well as in my work. Check out my portfolio of academic, professional, and personal writing.</p>
+                    <button>Read</button>
+                </div>
+                <div class="portfolio-item">
+                    <h2>Code</h2>
+                    <p>Working at a coding bootcamp exposed me to incredible technologies, but more importantly to the possibility that anyone can learn to code.
+                    Diving in myself re-ignited my love of learning and has sparked a new passion for programming that I cultivate early in the mornings before work.</p>
+                    <button>Look</button>
+                </div>
+                <div class="portfolio-item">
+                    <h2>Music</h2>
+                    <p>Music has been a life-long passion since I picked up the sax in 4th grade. I used to perform weekly and tour nationally in college, but more recently have settled in as a hobby musician.
+                    While Tenor Saxophone is my first love, you can now find me happily fiddling on acoustic or electric guitar, keyboard, and sometimes ukulele.</p>
+                    <button>Listen</button>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="bgimg-1">
         <div class="caption">
-            <span class="border">EXPLORE!</span>
+            <span class="border">CONNECT</span>
         </div>
     </div>
 </body>
