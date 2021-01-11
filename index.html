@@ -85,6 +85,12 @@
             color:lightgray;
             /*color:#474749;*/
         }
+        #logo{
+            position:absolute;
+            padding: 10px;
+            margin: 10px;
+            max-width:100px;
+        }
 
         /* Turn off parallax scrolling for tablets and phones */
         @media only screen and (max-device-width: 1024px) {
@@ -93,9 +99,7 @@
             }
         }
 
-        #logo{
-            position:absolute;
-        }
+
     </style>
     <script>
         //Get the button:
@@ -120,7 +124,9 @@
     </script>
 </head>
 <body>
-<img id="logo" src="./photos/DA-logo.png">
+    <div>
+        <a><img id="logo" src="./photos/DA-logo.png"></a>
+    </div>
     <div class="bgimg-1">
         <div class="caption">
             <span class="border">Dimitri Antoniou</span>
