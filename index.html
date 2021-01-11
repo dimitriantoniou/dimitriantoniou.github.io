@@ -6,31 +6,137 @@
     <title>Dimitri Antoniou</title>
     <link rel="stylesheet" href="stylesheet.css">
     <style>
+
         body, html {
             height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
         }
-        .parallax {
-            /* The image used */
-            background-image: url('./photos/buen_camino_full.jpg');
-            /* Full height */
-            height: 100%;
 
-            /* Create the parallax scrolling effect */
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            position: relative;
+            opacity: 0.65;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+
         }
+        .bgimg-1 {
+            background-image: url("./photos/acadia_path.jpg");
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("./photos/camino-woods.jpg");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("./photos/camino road.jpg");
+            min-height: 400px;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+        #portfolio{
+            display:flex;
+            justify-content: space-around;
+
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+
     </style>
 </head>
 <body>
 <nav></nav>
-<br>
-    <div class="parallax"></div>
-    <div style="height:250px;background-color:grey;font-size:36px">
-        Welcome to my website!
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Dimitri Antoniou</span>
+        </div>
     </div>
-    <div class="parallax"></div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">Welcome!</h3>
+        <p>I built this website to introduce myself to new people and to challenge myself to continually contribute to a meaningful portfolio. Within, you can learn more about me, read samples of my writing, listen to my music, and check out my code. I would love to connect via my LinkedIn profile or the contact page. Thank you for visiting!</p>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><b>ABOUT ME</b></span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>I'm a 27 year old Boston native living in Dallas, TX. Both my parents were entrepreneurs, so I gerw up with their ventures as my older siblings and their work as my early education.
+                Ever since, I've been excited by the pace, impact, and opportunity of entrepreneurship.
+                In college, I pursued a degree in Urban Studies, cultivating a set of values and lenses I now use to understand and engage with the world around me.
+                These two halves of myself met when I joined the Venture for America fellowship to spend 2 years living in an emerging US economy working for a startup.
+            </p>
+            <p>
+                For the last 4.5 years, I have worked at a TX-based career accelerator called Codeup, which helps career transitioners land and earn jobs in software development and data science.
+                When I joined, we were a team of 10, and I handled all basic operations and sales. With that base of experience, I then became a builder and a fixer, spearheading projects like
+                the launch of a Data Science program, the scaling of a program delivery team, the turnaround of our compliance department, a geographic expansion to Dallas, and most recently
+                a resconstruction of our business development and placement department.
+            </p>
+            <p>
+                I've also had a few forays into my own endeavors, including partnering in the founding of a mindful meditation cushion and assisting with the launch of a Southeast Asian style street food restaurant.
+                All of these experiences have cultivated my primary professional mission: to build sustainable business solutions that solve pressing socioeconomic issues.
+            </p>
+        </div>
+    </div>
+
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><b>MY PORTFOLIO</b></span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div style="color:#777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" class="flex-container">
+            <div id="portfolio">
+                <h2>Writing</h2>
+                <h2>Code</h2>
+                <h2>Music</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">EXPLORE!</span>
+        </div>
+    </div>
+</body>
 <footer></footer>
 <script type="text/javascript" src="jquery-2.2.4.js"></script>
 <script src="script.js"></script>
