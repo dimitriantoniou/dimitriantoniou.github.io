@@ -16,45 +16,40 @@
     <div class="mySlides fade">
         <div class="numbertext">1 / 6</div>
         <img src="./photos/CohortCalendar/Home.png" style="width:100%">
-        <div class="calendar-text">The Codeup Calendar is a full-stack Spring MVC web application built with bootstrap, custom CSS, JavaScript Java, SpringBoot, and MySQL. This home page shows the primary views of cohorts, holidays, and calendars.
+        <div class="calendar-text">The Codeup Calendar is a full-stack web application built with bootstrap, custom CSS, vanilla JavaScript, Java, SpringBoot, and MySQL. This home page shows the primary views of cohorts, holidays, and calendars.
         It is styled with bootstrap and custom CSS to match Codeup's brand standards. </div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">2 / 6</div>
         <img src="./photos/CohortCalendar/Login.png" style="width:100%">
-        <div class="calendar-text">Login page automatically redirects visitors using Spring Security for user authentication.</div>
+        <div class="calendar-text">The Login view uses Spring Security for user authentication and to redirect visitors.</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">3 / 6</div>
         <img src="./photos/CohortCalendar/Profile.png" style="width:100%">
-        <div class="calendar-text">Profile page uses thymeleaf to populate a custom table with user data from a MySQL database.</div>
+        <div class="calendar-text">After logging in, the profile page uses thymeleaf to populate a custom table with user data from a MySQL database.
+            Users can leverage CRUD functionality to update their information. A User controller hashes passwords to protect privacy.</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">4 / 6</div>
         <img src="./photos/CohortCalendar/Cohorts.png" style="width:100%">
         <div class="calendar-text">The Cohorts view uses thymeleaf to populate class data from a MySQL database.
-        Custom Java code in the Cohort controller automatically calculates a graduation date based on a start date, total hours, and holiday schedule.</div>
+        Custom Java code in the Cohort controller automatically calculates a graduation date based on a start date, total hours, and holiday schedule by looping through an array of dates and building a schedule with daily hours values.</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">5 / 6</div>
-        <img src="./photos/CohortCalendar/Edit%20existing%20cohorts.png" style="width:100%">
-        <div class="calendar-text">The Edit view shows the app's basic CRUD functionality, dynamically updating table content upon submission.</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">6 / 6</div>
         <img src="./photos/CohortCalendar/All%20Calendars.png" style="width:100%">
-        <div class="calendar-text">A Google Charts API renders the cohorts into a user-friendly gantt chart visualization.
+        <div class="calendar-text">A Google Charts API renders the cohorts data as a user-friendly gantt chart visualization.
             Cohorts are color-coded by their program property.
         </div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
+        <div class="numbertext">6 / 6</div>
         <img src="./photos/CohortCalendar/Web%20Dev%20Cohort%20Calendar.png" style="width:100%">
         <div class="calendar-text">Filtering by program or city changes the url and triggers a custom ajax request that returns Cohort data in JSON format,
             which is then passed into the Charts API. Vanilla JavaScript color codes the filter buttons to match the current view.
