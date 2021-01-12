@@ -16,7 +16,7 @@
 
         .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
             position: relative;
-            opacity: 0.65;
+            opacity: 0.75;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -58,6 +58,7 @@
             font-size: 25px;
             letter-spacing: 10px;
             opacity: .7;
+            z-index:-2;
         }
 
         h3 {
@@ -90,8 +91,14 @@
             padding: 10px;
             margin: 10px;
             max-width:100px;
+            position: fixed;
+            top: 0;
+            z-index:0;
         }
 
+        #portfolio-section, #about-section{
+            z-index:-1;
+        }
         /* Turn off parallax scrolling for tablets and phones */
         @media only screen and (max-device-width: 1024px) {
             .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -148,7 +155,7 @@
         </div>
     </div>
 
-    <div style="position:relative;">
+    <div style="position:relative;" id="about-section">
         <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
             <p>I'm a 27 year old Boston native living in Dallas, TX. Both my parents were entrepreneurs, so I gerw up with their ventures as my older siblings and their work as my early education.
                 Ever since, I've been excited by the pace, impact, and opportunity of entrepreneurship.
@@ -175,7 +182,7 @@
         </div>
     </div>
 
-    <div style="position:relative;">
+    <div style="position:relative;"id="portfolio-section">
         <div style="color:#777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" class="flex-container">
             <div id="portfolio">
                 <div class="portfolio-item">
