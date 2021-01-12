@@ -14,21 +14,51 @@
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./photos/alps.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
+        <div class="numbertext">1 / 6</div>
+        <img src="./photos/CohortCalendar/Home.png" style="width:100%">
+        <div class="calendar-text">The Codeup Calendar is a full-stack Spring MVC web application built with bootstrap, custom CSS, JavaScript Java, SpringBoot, and MySQL. This home page shows the primary views of cohorts, holidays, and calendars.
+        It is styled with bootstrap and custom CSS to match Codeup's brand standards. </div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="./photos/hiking-trail.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
+        <div class="numbertext">2 / 6</div>
+        <img src="./photos/CohortCalendar/Login.png" style="width:100%">
+        <div class="calendar-text">Login page automatically redirects visitors using Spring Security for user authentication.</div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="./photos/rocky-trail.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
+        <div class="numbertext">3 / 6</div>
+        <img src="./photos/CohortCalendar/Profile.png" style="width:100%">
+        <div class="calendar-text">Profile page uses thymeleaf to populate a custom table with user data from a MySQL database.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="./photos/CohortCalendar/Cohorts.png" style="width:100%">
+        <div class="calendar-text">The Cohorts view uses thymeleaf to populate class data from a MySQL database.
+        Custom Java code in the Cohort controller automatically calculates a graduation date based on a start date, total hours, and holiday schedule.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="./photos/CohortCalendar/Edit%20existing%20cohorts.png" style="width:100%">
+        <div class="calendar-text">The Edit view shows the app's basic CRUD functionality, dynamically updating table content upon submission.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="./photos/CohortCalendar/All%20Calendars.png" style="width:100%">
+        <div class="calendar-text">A Google Charts API renders the cohorts into a user-friendly gantt chart visualization.
+            Cohorts are color-coded by their program property.
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="./photos/CohortCalendar/Web%20Dev%20Cohort%20Calendar.png" style="width:100%">
+        <div class="calendar-text">Filtering by program or city changes the url and triggers a custom ajax request that returns Cohort data in JSON format,
+            which is then passed into the Charts API. Vanilla JavaScript color codes the filter buttons to match the current view.
+        </div>
     </div>
 
     <!-- Next and previous buttons -->
@@ -42,10 +72,15 @@
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+
+
 </div>
 <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
 <script src="script.js"></script>
-<footer></footer>
+<!--<footer></footer>-->
 <script type="text/javascript" src="jquery-2.2.4.js"></script>
 <script src="script.js"></script>
 </body>
