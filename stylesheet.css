@@ -2,6 +2,8 @@
 /* Small devices (phones and pocket devices, 576 and up) */
 @media screen and (min-width:576px) {
     /* ... */
+
+
     .menu {
         display: flex;
         flex-wrap: wrap;
@@ -70,9 +72,24 @@
 
 /* Large devices (desktops, 992px and up) */
 @media all and (min-width: 960px) {
+    body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+    }
 
+    #logo{
+        position:absolute;
+        padding: 10px;
+        margin: 10px;
+        max-width:100px;
+        position: fixed;
+        top: 0;
+        z-index:0;
+    }
     nav {
-        background: black;
+        background: white;
     }
 
     .menu {
@@ -112,7 +129,7 @@
 
     nav a {
         text-decoration: none;
-        color: white;
+        color: black;
         display: inline-block; /* inline-block to increase clickable area beyond the text */
         padding: 1em; /* increases clickable area of anchor tags on all sides by 1em */
     }
@@ -120,6 +137,104 @@
         background: grey;
     }
 
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, bgimg-5 {
+        position: relative;
+        opacity: 0.75;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .bgimg-1 {
+        background-image: url("./photos/index/acadia_path.jpg");
+        min-height: 700px;
+    }
+
+    .bgimg-2 {
+        background-image: url("./photos/index/camino-woods.jpg");
+        min-height: 400px;
+    }
+
+    .bgimg-3 {
+        background-image: url("./photos/index/rocky-trail.jpg");
+        min-height: 400px;
+    }
+    .bgimg-4 {
+        background-image: url("./photos/index/snowy-camino.jpg");
+        min-height: 600px;
+    }
+    .bgimg-5 {
+        background-image: url("./photos/map-background.jpg");
+        min-height: 400px;
+    }
+
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+
+    .caption span.border {
+        background-color: black;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+        opacity: .7;
+        z-index:-2;
+    }
+
+    .index-section{
+        color:#777;
+        background-color:white;
+        text-align:center;
+        padding:50px 80px;
+        text-align: justify;
+        margin: 30px;
+    }
+
+    h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+    }
+    #portfolio{
+        display:flex;
+        justify-content: space-around;
+    }
+    .portfolio-item{
+        margin: 10px;
+    }
+    button, .btn{
+        background: #777777;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .btn-large{
+        background-color: black;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+        opacity: .7;
+        z-index:-2;
+    }
+    #main-bio{
+        color:lightgray;
+        /*color:#474749;*/
+    }
+
+    #portfolio-section, #about-section{
+        z-index:-1;
+    }
     /*slide show code*/
 
     * {box-sizing:border-box}
