@@ -1,20 +1,41 @@
 
-<nav id="nav_bar">
-    <ul class="menu" >
-        <li class="item"><a href="index.html"><img id="logo" src="./photos/DA-logo.png" alt="Dimitri-Antoniou-logo"></a>
-        <li class="item"><a href="index.html">Dimitri Antoniou</a></li>
-        <!--<li class="item"><a href="index.html"><img class ="img-circle headshot-image" src="./photos/black_white_headshot.jpeg" alt="Dimitri Antoniou"></a>-->
-        </li>
-        <li class="item"><a href="resume.html">Resumé</a></li>
-        <li class="item"><a href="writing.html">Writing</a>
-            <ul class="submenu">
-                <li class="subitem"><a href="writing_professional.html">Professional</a></li>
-                <li class="subitem"><a href="writing_personal.html">Personal</a></li>
-                <li class="subitem"><a href="writing_academic.html">Academic</a></li>
-            </ul>
-        </li>
-        <li class="item"><a href="code.html">Code</a></li>
-        <li class="item"><a href="code.html">Music</a></li>
-        <li class="item"><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/resume.html">About</a>
+    <a href="/writing.html">Writing</a>
+    <a href="/code.html">Code</a>
+    <a href="/music.html">Music</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+
+
+<!--<nav id="nav_bar">-->
+<!--    <ul class="menu" >-->
+<!--        <li class="item"><a href="index.html"><img id="logo" src="./photos/DA-logo.png" alt="Dimitri-Antoniou-logo"></a>-->
+<!--        <li class="item"><a href="index.html">Dimitri Antoniou</a></li>-->
+<!--        &lt;!&ndash;<li class="item"><a href="index.html"><img class ="img-circle headshot-image" src="./photos/black_white_headshot.jpeg" alt="Dimitri Antoniou"></a>&ndash;&gt;-->
+<!--        </li>-->
+<!--        <li class="item"><a href="resume.html">Resumé</a></li>-->
+<!--        <li class="item"><a href="writing.html">Writing</a>-->
+<!--            <ul class="submenu">-->
+<!--                <li class="subitem"><a href="writing_professional.html">Professional</a></li>-->
+<!--                <li class="subitem"><a href="writing_personal.html">Personal</a></li>-->
+<!--                <li class="subitem"><a href="writing_academic.html">Academic</a></li>-->
+<!--            </ul>-->
+<!--        </li>-->
+<!--        <li class="item"><a href="code.html">Code</a></li>-->
+<!--        <li class="item"><a href="code.html">Music</a></li>-->
+<!--        <li class="item"><a href="contact.html">Contact</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
