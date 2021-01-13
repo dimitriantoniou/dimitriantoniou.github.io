@@ -137,7 +137,7 @@
         background: grey;
     }
 
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, bgimg-5 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
         position: relative;
         opacity: 0.75;
         background-attachment: fixed;
@@ -165,6 +165,10 @@
         min-height: 600px;
     }
     .bgimg-5 {
+        background-image: url("./photos/atlas.jpg");
+        min-height: 400px;
+    }
+    .bgimg-6 {
         background-image: url("./photos/map-background.jpg");
         min-height: 400px;
     }
@@ -194,7 +198,7 @@
         text-align:center;
         padding:50px 80px;
         text-align: justify;
-        margin: 30px;
+        margin: 40px;
     }
 
     h3 {
