@@ -185,7 +185,8 @@
         font-size: 25px;
         padding: 8px 12px;
         position: absolute;
-        top: 0;
+        bottom: 20px;
+        right: 16px;
     }
 
     /* The dots/bullets/indicators */
