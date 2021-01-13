@@ -1,13 +1,16 @@
-<div style="text-align:right">
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/resume.html">About</a>
-    <a href="/writing.html">Writing</a>
-    <a href="/code.html">Code</a>
-    <a href="/music.html">Music</a>
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-</div>
+    <div>
+        <a><img id="logo" src="./photos/DA-logo.png"></a>
+    </div>
+    <div style="text-align:right">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/resume.html">About</a>
+            <a href="/writing.html">Writing</a>
+            <a href="/code.html">Code</a>
+            <a href="/music.html">Music</a>
+        </div>
+        <span style="position:sticky;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
 <script>
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
