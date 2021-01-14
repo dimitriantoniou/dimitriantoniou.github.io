@@ -145,7 +145,9 @@
         display: block;
         width: auto;
     }
-
+    nav{
+        position:fixed;
+    }
     nav a {
         text-decoration: none;
         color: black;
@@ -240,6 +242,10 @@
         padding: 10px 20px;
         text-align: center;
         display: inline-block;
+    }
+    a.btn{
+        text-decoration:none;
+
     }
     .btn-large{
         background-color: black;
@@ -411,6 +417,12 @@
         align-content: flex-start;
     }
 
+    #flex-container{
+        display:flex;
+    }
+    .portfolio-code{
+        flex-direction:row;
+    }
 
 }
 
