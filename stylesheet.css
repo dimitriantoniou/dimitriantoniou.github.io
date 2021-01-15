@@ -72,6 +72,7 @@
 
 /* Large devices (desktops, 992px and up) */
 @media all and (min-width: 960px) {
+
     body, html {
         height: 100%;
         margin: 0;
@@ -79,14 +80,36 @@
         color: #777;
     }
 
-    #logo{
+    nav{
+        position:fixed;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+        display: inline-block; /* inline-block to increase clickable area beyond the text */
+        padding: 1em; /* increases clickable area of anchor tags on all sides by 1em */
+    }
+    nav a:hover {
+        background: grey;
+    }
+
+    #nav-logo{
         position:absolute;
         padding: 10px;
         margin: 10px;
         max-width:100px;
-        position: fixed;
         top: 0;
         z-index:0;
+    }
+
+    #nav-hamburger{
+        right:0;
+        padding: 10px;
+        margin: 10px;
+        text-align:right;
+        position:fixed;
+        font-size:30px;
+        ursor:pointer;
     }
     .sidenav {
         height: 100%;
@@ -145,18 +168,7 @@
         display: block;
         width: auto;
     }
-    nav{
-        position:fixed;
-    }
-    nav a {
-        text-decoration: none;
-        color: black;
-        display: inline-block; /* inline-block to increase clickable area beyond the text */
-        padding: 1em; /* increases clickable area of anchor tags on all sides by 1em */
-    }
-    nav a:hover {
-        background: grey;
-    }
+
 
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
         position: relative;
