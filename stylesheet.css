@@ -99,7 +99,6 @@
         margin: 10px;
         max-width:100px;
         top: 0;
-        z-index:0;
     }
 
     #nav-hamburger{
@@ -178,6 +177,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        /*z-index: -1;*/
     }
 
     .bgimg-1 {
