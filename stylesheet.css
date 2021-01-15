@@ -109,13 +109,14 @@
         text-align:right;
         position:fixed;
         font-size:30px;
-        ursor:pointer;
+        cursor:pointer;
+        color: black;
     }
     .sidenav {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         top: 0;/*where the side nav begins vertically*/
         right: 0;/*where the side nav begins horizontally*/
         background-color: #111;
@@ -177,8 +178,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
     }
+
     .bgimg-1 {
         background-image: url("./photos/index/acadia_path.jpg");
         min-height: 700px;
