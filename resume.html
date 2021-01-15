@@ -49,6 +49,20 @@
             <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="dimitri-m-antoniou"><a class="LI-simple-link" href='https://www.linkedin.com/in/dimitri-m-antoniou?trk=profile-badge'>Dimitri Antoniou (he, him)</a></div>
         </container>
 
+        <container class="flex-container">
+            <div id="adobe-dc-view" style="width: 800px;"></div>
+            <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+            <script type="text/javascript">
+                document.addEventListener("adobe_dc_view_sdk.ready", function(){
+                    var adobeDCView = new AdobeDC.View({clientId: "c57ae63dca004c089bce482d9a86885a", divId: "adobe-dc-view"});
+                    adobeDCView.previewFile({
+                        content:{location: {url: "https://drive.google.com/file/d/13PTOusTjBAUO0w6-YkfVhy1lSoRKIlsS/view?usp=sharing"}},
+                        metaData:{fileName: "Bodea Brochure.pdf"}
+                    }, {embedMode: "IN_LINE"});
+                });
+            </script>
+        </container>
+
     </div>
 
     <div class="bgimg-6">
@@ -59,6 +73,18 @@
 </body>
 
 <footer></footer>
+<!--Adobe Embed PDF API -->
+<script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function()
+    {
+        var adobeDCView = new AdobeDC.View({clientId: "c57ae63dca004c089bce482d9a86885a", divId: "adobe-dc-view"});
+        adobeDCView.previewFile(
+            {
+                content:   {location: {url: "https://drive.google.com/file/d/13PTOusTjBAUO0w6-YkfVhy1lSoRKIlsS/view?usp=sharing"}},
+                metaData: {fileName: "Dimitri_Antoniou_Resume"}
+            });
+    });
+</script>
 <!--LI Profile Badge script-->
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 <script type="text/javascript" src="jquery-2.2.4.js"></script>
