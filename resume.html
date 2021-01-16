@@ -50,26 +50,10 @@
         </container>
 
         <container class="flex=container">
-            <a href="http://www.dimitriantoniou.com/resume/">View my resume</a>
-            <a href="/Dimitri_Antoniou_Resume_Jan_2021%20(2).pdf">View my resume</a>
-
+            <button class="btn" role="button"><a href="http://www.dimitriantoniou.com/resume/" target="_blank">View my resume</a></button>
+            <br>
+            <button class="btn" role="button"><a href="/Dimitri_Antoniou_Resume_Jan_2021%20(2).pdf"><i class="fa fa-download"></i> Download Resume</a></button>
         </container>
-
-        <container class="flex-container">
-            <div id="adobe-dc-view" style="width: 800px;"></div>
-            <!--Adobe Embed PDF API -->
-            <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-            <script type="text/javascript">
-                document.addEventListener("adobe_dc_view_sdk.ready", function(){
-                    var adobeDCView = new AdobeDC.View({clientId: "c57ae63dca004c089bce482d9a86885a", divId: "adobe-dc-view"});
-                    adobeDCView.previewFile({
-                        content:{location: {url: "https://www.dimitriantoniou.com/resume/"}},
-                        metaData:{fileName: "Dimitri_Antoniou_Resume.pdf"}
-                    }, {embedMode: "IN_LINE"});
-                });
-            </script>
-        </container>
-
     </div>
 
     <div class="bgimg-6">
