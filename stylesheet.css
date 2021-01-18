@@ -89,7 +89,7 @@
         display: inline-block; /* inline-block to increase clickable area beyond the text */
         padding: 1em; /* increases clickable area of anchor tags on all sides by 1em */
     }
-    nav a:hover {
+    .sidenav a:hover {
         background: grey;
     }
 
