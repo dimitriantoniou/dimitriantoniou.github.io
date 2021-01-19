@@ -170,7 +170,7 @@
     }
 
 
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10 {
         position: relative;
         opacity: 0.75;
         background-attachment: fixed;
@@ -206,6 +206,25 @@
         background-image: url("./photos/map-background.jpg");
         min-height: 400px;
     }
+    .bgimg-7 {
+        background-image: url("./photos/pexels-andrew-neel-2859169.jpg");
+        min-height: 400px;
+        opacity: .85;
+    }
+
+    .bgimg-8 {
+        background-image: url("./photos/pexels-pixabay-41949.jpg");
+        min-height: 400px;
+    }
+    .bgimg-9 {
+         background-image: url("./photos/pexels-anna-shvets-5217882.jpg");
+         min-height: 400px;
+     }
+    .bgimg-10 {
+        background-image: url("./photos/pexels-joshua-woroniecki-4491499.jpg");
+        min-height: 400px;
+    }
+
 
     .caption {
         position: absolute;
