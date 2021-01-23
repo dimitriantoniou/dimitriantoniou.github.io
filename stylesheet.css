@@ -170,7 +170,7 @@
     }
 
 
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11, .bgimg-12, .bgimg-13 {
         position: relative;
         opacity: 0.75;
         background-attachment: fixed;
@@ -224,6 +224,18 @@
         background-image: url("./photos/pexels-joshua-woroniecki-4491499.jpg");
         min-height: 400px;
     }
+    .bgimg-11 {
+        background-image: url("./photos/index.html_screenshot.png");
+        min-height: 400px;
+    }
+    .bgimg-12 {
+        background-image: url("./photos/ajax.html_screenshot.png");
+        min-height: 400px;
+    }
+    .bgimg-13 {
+         background-image: url("./photos/CohortController.java_screenshot.png");
+         min-height: 600px;
+     }
 
 
     .caption {
