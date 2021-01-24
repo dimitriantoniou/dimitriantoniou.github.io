@@ -181,59 +181,59 @@
     }
 
     .bgimg-1 {
-        background-image: url("./photos/index/acadia_path.jpg");
+        background-image: url("./photos/index/acadia_path_optimized.jpg");
         min-height: 700px;
     }
 
     .bgimg-2 {
-        background-image: url("./photos/index/camino-woods.jpg");
+        background-image: url("./photos/index/camino-woods_optimized.jpg");
         min-height: 400px;
     }
 
     .bgimg-3 {
-        background-image: url("./photos/index/rocky-trail.jpg");
+        background-image: url("./photos/index/rocky-trail_optimized.jpg");
         min-height: 400px;
     }
     .bgimg-4 {
-        background-image: url("./photos/index/snowy-camino.jpg");
+        background-image: url("./photos/index/snowy-camino_optimized.jpg");
         min-height: 600px;
     }
     .bgimg-5 {
-        background-image: url("./photos/atlas.jpg");
+        background-image: url("./photos/about/atlas_optimized.jpg");
         min-height: 400px;
     }
     .bgimg-6 {
-        background-image: url("./photos/map-background.jpg");
+        background-image: url("./photos/about/map-pile_optimized.jpg");
         min-height: 400px;
     }
     .bgimg-7 {
-        background-image: url("./photos/pexels-andrew-neel-2859169.jpg");
+        background-image: url("./photos/about/map-pile_optimized.jpg");
         min-height: 400px;
         opacity: .85;
     }
 
     .bgimg-8 {
-        background-image: url("./photos/pexels-pixabay-41949.jpg");
+        background-image: url("./photos/about/night-sky_optimized.jpg");
         min-height: 400px;
     }
     .bgimg-9 {
-         background-image: url("./photos/pexels-anna-shvets-5217882.jpg");
+         background-image: url("./photos/about/googly-globe_optimized.jpg");
          min-height: 400px;
      }
     .bgimg-10 {
-        background-image: url("./photos/pexels-joshua-woroniecki-4491499.jpg");
+        background-image: url("./photos/about/compass_optimized.jpg");
         min-height: 400px;
     }
     .bgimg-11 {
-        background-image: url("./photos/index.html_screenshot.png");
+        background-image: url("./photos/about/pins_optimized.jpg");
         min-height: 400px;
     }
     .bgimg-12 {
-        background-image: url("./photos/ajax.html_screenshot.png");
+        background-image: url("./photos/code/ajax.html_screenshot.png");
         min-height: 400px;
     }
     .bgimg-13 {
-         background-image: url("./photos/CohortController.java_screenshot.png");
+         background-image: url("./photos/code/CohortController.java_screenshot.png");
          min-height: 600px;
      }
 
