@@ -170,7 +170,7 @@
     }
 
 
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11, .bgimg-12, .bgimg-13 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11, .bgimg-12, .bgimg-13, .bgimg-14, .bgimg-15,.bgimg-16,.bgimg-17,.bgimg-18 {
         position: relative;
         opacity: 0.75;
         background-attachment: fixed;
@@ -236,23 +236,23 @@
          min-height: 600px;
      }
     .bgimg-14 {
-        background-image: url("./photos/");
+        background-image: url("./photos/writing/writing_optimized.jpg");
         min-height: 600px;
     }
     .bgimg-15 {
-        background-image: url("./photos/");
+        background-image: url("./photos/writing/writing-work_optimized.jpg");
         min-height: 600px;
     }
     .bgimg-16 {
-        background-image: url("./photos/");
+        background-image: url("./photos/writing/library_optimized.jpg");
         min-height: 600px;
     }
     .bgimg-17 {
-        background-image: url("./photos/");
+        background-image: url("./photos/writing/stories-matter_optimized.jpg");
         min-height: 600px;
     }
     .bgimg-18 {
-        background-image: url("./photos/");
+        background-image: url("./photos/writing/writing_optimized.jpg");
         min-height: 600px;
     }
 
