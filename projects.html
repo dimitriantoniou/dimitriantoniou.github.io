@@ -55,17 +55,34 @@
 
 <div class="bgimg-12">
     <div class="caption">
-        <span class="border">CODEUP CALENDAR</span>
+        <span class="border">CODING - CODEUP CALENDAR</span>
     </div>
 </div>
-
-<div class="index-section" style="display:flex; flex-direction: row">
+<div class="index-section">
+    <p>Working at a coding bootcamp exposed me to incredible technologies, but more importantly to the possibility that anyone can learn to code.
+        Diving in myself re-ignited my love of learning and has sparked a new passion for programming that I cultivate early in the mornings before work.
+        While at first it felt like a pipe dream, I set a goal of completing Codeup's full-stack curriculum in my personal time in order to build an application to automate
+        a tedious part of my job. Thus, the Codeup Cohort Calendar was born!
+    </p>
+    <ul>
+        <li>The Codeup Calendar is a full-stack web application built with JavaScript, Java, SpringBoot, and MySQL.</li>
+        <li> It is styled with bootstrap and custom CSS to match Codeup's brand standards.</li>
+        <li>The home page shows the primary views of cohorts, holidays, and calendars.</li>
+        <li>The Login view uses Spring Security for user authentication and to redirect visitors.</li>
+        <li>After logging in, the profile page uses thymeleaf to populate a custom table with user data from a MySQL database.
+            Users can leverage CRUD functionality to update their information. A User controller hashes passwords to protect privacy.</li>
+        <li>The Cohorts view uses thymeleaf to populate class data from a MySQL database. Custom Java code in the Cohort controller automatically calculates a graduation date based on a start date, total hours, and holiday schedule by looping through an array of dates and building a schedule with daily hours values.</li>
+        <li>A Google Charts API renders the cohorts data as a user-friendly gantt chart visualization. Cohorts are color-coded by their program property.</li>
+        <li>Filtering by program or city changes the url and triggers a custom ajax request that returns Cohort data in JSON format,
+            which is then passed into the Charts API. Vanilla JavaScript color codes the filter buttons to match the current view.</li>
+    </ul>
+<!--<div class="index-section" style="display:flex; flex-direction: row">-->
     <video width="640" height="480" controls style="margin-left: auto;margin-right:auto;display:block;" poster="/photos/CohortCalendar/CodeupCalendar_thumbnail.png" pre-load="auto">
             <source src="/photos/code/CodeupCalendar_DimitriAntoniou.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    <div class="slideshow-container">
-        <!-- The dots/circles -->
+    <!--<div class="slideshow-container">
+        &lt;!&ndash; The dots/circles &ndash;&gt;
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -74,7 +91,7 @@
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
         </div>
-        <!-- Full-width images with number and caption text -->
+        &lt;!&ndash; Full-width images with number and caption text &ndash;&gt;
         <div class="mySlides fade">
             <div class="calendar-text">The Codeup Calendar is a full-stack web application built with bootstrap, custom CSS, vanilla JavaScript, Java, SpringBoot, and MySQL. This home page shows the primary views of cohorts, holidays, and calendars.
                 It is styled with bootstrap and custom CSS to match Codeup's brand standards. </div>
@@ -118,10 +135,10 @@
             <img src="./photos/CohortCalendar/Web%20Dev%20Cohort%20Calendar.png" style="width:100%">
         </div>
 
-        <!-- Next and previous buttons -->
+        &lt;!&ndash; Next and previous buttons &ndash;&gt;
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
+    </div>-->
 </div>
 
 <div class="bgimg-12">
