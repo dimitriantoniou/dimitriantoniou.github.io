@@ -170,7 +170,7 @@
     }
 
 
-    .bgimg,.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11, .bgimg-12, .bgimg-13, .bgimg-14, .bgimg-15,.bgimg-16,.bgimg-17,.bgimg-18,.bgimg-19,.bgimg-20 {
+    .bgimg,.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11, .bgimg-12, .bgimg-13, .bgimg-14, .bgimg-15,.bgimg-16,.bgimg-17,.bgimg-18,.bgimg-19,.bgimg-20, .bgimg-21 {
         position: relative;
         opacity: 0.75;
         background-attachment: fixed;
@@ -264,6 +264,11 @@
         min-height: 400px;
     }
 
+    .bgimg-21{
+        background-image: url("./photos/projects/projects-optimized.jpg");
+        min-height: 400px;
+    }
+
 
     .caption {
         position: absolute;
@@ -291,6 +296,9 @@
         padding:50px 80px;
         text-align: justify;
         margin: 90px;
+    }
+    .index-section container{
+        margin: 20px;
     }
 
     h3 {
