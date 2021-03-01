@@ -1,5 +1,12 @@
 /*home page styled*/
 /* Small devices (phones and pocket devices, 576 and up) */
+nav{
+    position:fixed;
+    width: 100VW;
+    height: 80px;
+    z-index: 100;
+    background-color: rgba(255,255,255,.5);
+}
 @media screen and (min-width:576px) {
     /* ... */
 
@@ -80,9 +87,6 @@
         color: #777;
     }
 
-    nav{
-        position:fixed;
-    }
     nav a {
         text-decoration: none;
         color: black;
