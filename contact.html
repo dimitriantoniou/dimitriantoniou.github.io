@@ -4,35 +4,177 @@
     <meta charset="UTF-8">
     <title>DA | Contact</title>
     <link rel="stylesheet" href="stylesheet.css">
+<style>
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+        color: #aca49c;
+        font-size: 0.875em;
+    }
 
+    input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+        color: #bbb5af;
+    }
+
+    input::-moz-placeholder, textarea::-moz-placeholder {
+        color: #aca49c;
+        font-size: 1em;
+    }
+
+    input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+        color: #bbb5af;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: #aca49c;
+        font-size: 1em;
+    }
+
+
+    /* on hover placeholder */
+
+    input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+        color: #e2dedb;
+        font-size: 1em;
+    }
+
+    input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+        color: #cbc6c1;
+    }
+
+    input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+        color: #e2dedb;
+        font-size: 1em;
+    }
+
+    input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+        color: #cbc6c1;
+    }
+
+    input:hover::placeholder, textarea:hover::placeholder {
+        color: #e2dedb;
+        font-size: 1em;
+    }
+
+    input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+        color: #cbc6c1;
+    }
+
+    input:hover::placeholder, textarea:hover::placeholder {
+        color: #e2dedb;
+        font-size: 1em;
+    }
+
+
+    body {
+        font-family: 'Lato', sans-serif;
+        background: #e2dedb;
+        color: #b3aca7;
+    }
+
+    header {
+        position: relative;
+        margin: 100px 0 25px 0;
+        font-size: 2.3em;
+        text-align: center;
+        letter-spacing: 7px;
+    }
+
+    #form {
+        position: relative;
+        width: 500px;
+        margin: 50px auto 100px auto;
+    }
+
+    input {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.875em;
+        width: 470px;
+        height: 50px;
+        padding: 0px 15px 0px 15px;
+
+        background: black;
+        opacity: .7;
+        outline: none;
+        color: #726659;
+
+        border: solid 1px #b3aca7;
+        border-bottom: none;
+
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+    }
+
+    input:hover {
+        background: #b3aca7;
+        color: #e2dedb;
+    }
+
+    textarea {
+        width: 470px;
+        max-width: 470px;
+        height: 110px;
+        max-height: 110px;
+        padding: 15px;
+
+        background: black;
+        opacity: .7;
+        outline: none;
+
+        color: #726659;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+
+        border: solid 1px #b3aca7;
+
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+    }
+
+    textarea:hover {
+        background: #b3aca7;
+        color: #e2dedb;
+    }
+
+    #submit {
+        padding: 0;
+        margin: -5px 0px 0px 0px;
+
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        color: #b3aca7;
+
+        outline:none;
+        cursor: pointer;
+
+        border: solid 1px #b3aca7;
+        border-top: none;
+    }
+
+    #submit:hover {
+        color: #e2dedb;
+    }
+</style>
 </head>
 <body>
 <nav></nav>
+<div class="bgimg-1 bgimg">
+    <div class="caption" style="top:200px">
+        <span class="border">CONTACT</span>
+        <br>
+        <br>
+            <form id="form" method="POST" action="MailThis.to/dimitri.m.antoniou@mail.com">
+                <input id="name" type="text" placeholder="NAME">
+                <input id="email" type="text" placeholder="E-MAIL">
+                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                <input id="submit" type="submit" value="GO!">
+            </form>
+    </div>
+</div>
 <h1>Contact</h1>
-<form method="POST">
-    <label for ="firstName">First Name</label>
-    <input id="firstName" name="firstName" type="text">
-    <br>
 
-    <label for="lastName">Last Name</label>
-    <input id="lastName" name="lastName" type="text">
-    <br>
-
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email">
-    <br>
-
-    <label for="subject">Subject</label>
-    <input id="subject" name="subject" type="text">
-    <br>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message"></textarea>
-
-    <input type="submit">
-
-
-</form>
 <footer></footer>
 <script type="text/javascript" src="jquery-2.2.4.js"></script>
 <script src="script.js"></script>
